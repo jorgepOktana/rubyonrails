@@ -14,8 +14,17 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'bootstrap-sass', '~> 3.4.1'
 gem 'sassc-rails', '>= 2.1.0'
 gem 'jquery-rails'
+gem 'font-awesome-sass', '~> 4.6', '>= 4.6.2'
+gem 'bootstrap-sass-extras', '~> 0.0.2'
+gem 'devise', '~> 4.2'
+gem 'simple_form'
 
 gem 'bootsnap', '>= 1.1.0', require: false
+
+group :production do 
+  gem 'rails_12factor', '~> 0.0.3'
+  gem 'pg', '~> 1.1', '>= 1.1.4'
+end
 
 group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
