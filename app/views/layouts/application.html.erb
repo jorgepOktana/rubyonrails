@@ -1,26 +1,30 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>SampleApp</title>
-    <%= csrf_meta_tags %>
-    <%= csp_meta_tag %>
-
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true  %> 
-    <%= javascript_include_tag 'application', 'data-turbolinks-track' => true  %>
-    <style>
+<head>
+  <title>This is not Parsable</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+  <style>
       .nav-link {
-        color: black ; 
+        color: black; 
+      }
+      .checkbox input[type="checkbox"]{
+        margin-left: 0;
+      }
+      .button, html input[type="button"], input[type="reset"], input[type="submit"] {
+        color: #333333;
+        background-color: #e7e7e7;
+        border-color: #cccccc;
       }
   </style>
-
-  </head>
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  <body>
-    <%= render 'layouts/nav'  %> <%# this is the address of the nav bar layout%>
-    <%= bootstrap_flash %>
-    <div class='container'>
-      <%= yield %>
-    </div>
-    <%= render 'layouts/foot' %>
-   </body>
+</head>
+<body>
+	<%= render 'layouts/nav' %>
+	<%= bootstrap_flash %>
+	<div class= 'container'>	
+		<%= yield %>
+</div>
+<%= render 'layouts/foot' %>
+</body>
 </html>
