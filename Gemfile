@@ -15,7 +15,7 @@ gem 'sassc-rails', '>= 2.1.0'
 gem 'jquery-rails'
 gem 'font-awesome-sass', '~> 4.6', '>= 4.6.2'
 gem 'bootstrap-sass-extras', '~> 0.0.2'
-gem 'devise', '~> 4.2'
+gem 'devise', '~> 4.7'
 gem 'simple_form'
 
 gem 'bootsnap', '>= 1.1.0', require: false
